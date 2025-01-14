@@ -7,7 +7,7 @@ const EntityDetails = () => {
   const [details, setDetails] = useState(null);
 
   useEffect(() => {
-    axios.get(`https://swapi.dev/api/${endpoint}/${id}/`).then((response) => {
+    axios.get(`https://swapi.dev/documentation/${endpoint}/${id}/`).then((response) => {
       setDetails(response.data);
     });
   }, [endpoint, id]);
